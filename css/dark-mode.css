@@ -1,0 +1,286 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Top Navbar */
+body.dark-mode .top-navbar {
+  background: #1e1e1e;
+}
+
+body.dark-mode .top-navbar .logo {
+  color: #f1f1f1;
+}
+
+/* Hero Section */
+body.dark-mode .hero {
+  background: #121212;
+}
+
+body.dark-mode .hero-text p,
+body.dark-mode .hero-text h1 {
+  color: #f1f1f1;
+}
+
+/* Hero Button */
+body.dark-mode .hero-btn {
+  background-color: #33333300;
+  color: #f4f74f;
+}
+
+/* Responsive Navbar (mobile) */
+@media (max-width: 768px) {
+  body.dark-mode .bottom-navbar nav {
+    background: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+  }
+
+  body.dark-mode .hero-text p {
+    color: #ccc;
+  }
+}
+
+/* Floating Button */
+body.dark-mode .floating-button {
+  background-color: #8f4ff7;
+  color: #121212;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Overlay Content */
+body.dark-mode .overlay-content {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+body.dark-mode .overlay-content button,
+body.dark-mode .overlay-content select {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+
+/* DARK MODE SECTION SHOWCASE */
+/* Dark mode untuk Showcase Section */
+body.dark-mode .showcase {
+  background-color: #121212;
+}
+
+body.dark-mode .showcase-header h2 {
+  color: #f1f1f1;
+}
+
+body.dark-mode .showcase-header p {
+  color: #bbbbbb;
+}
+
+body.dark-mode .nav-btn {
+  background-color: #343434;
+  color: #ffffff;
+}
+
+/* Item showcase */
+body.dark-mode .showcase-item {
+  background-color: #1e1e1e;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .showcase-item h3 {
+  color: #f1f1f1;
+}
+
+body.dark-mode .showcase-item p {
+  color: #bbbbbb;
+}
+
+
+/* DARK MODE SECTION ABOUT */
+/* Dark mode untuk Section About */
+body.dark-mode .about {
+  background-color: #121212;
+}
+
+body.dark-mode .about h2 {
+  color: #f1f1f1;
+}
+
+body.dark-mode .about-text {
+  color: #ccc;
+}
+
+body.dark-mode .about-text strong {
+  color: #fff;
+}
+
+body.dark-mode .about-image img {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+
+/* DARK MODE SKIIL SECTION */
+/* === Dark Mode: Skill Section === */
+body.dark-mode .skill-section {
+  background-color: #121212;
+}
+
+body.dark-mode .soft-skill h2,
+body.dark-mode .hard-skill h2 {
+  color: #f1f1f1;
+}
+
+body.dark-mode .soft-desc p {
+  color: #ccc;
+}
+
+body.dark-mode .skill-card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .skill-name,
+body.dark-mode .skill-percent {
+  color: #eaeaea;
+}
+
+/* === Dark Mode: Footer === */
+body.dark-mode .footer {
+  background-color: #111;
+  color: #e0e0e0;
+}
+
+body.dark-mode .social-icons a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .social-icons a:hover {
+  color: #4dabf7;
+}
+
+
+
+/* ====== Dark Mode: Global ====== */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* ====== Dark Mode: Section & Heading ====== */
+body.dark-mode .projek-section h2 {
+  color: #f1f1f1;
+}
+
+/* ====== Dark Mode: Back Button ====== */
+body.dark-mode .back-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .back-btn:hover {
+  background-color: #555;
+}
+
+/* ====== Dark Mode: Card Grid ====== */
+body.dark-mode .projek-card {
+  background: #1e1e1e;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .projek-card h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .projek-card p,
+body.dark-mode .projek-card ul {
+  color: #ccc;
+}
+
+/* ====== Button Selengkapnya ====== */
+.dark-mode .btn-selengkapnya {
+  margin-top: auto;
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .btn-selengkapnya:hover {
+  background-color: #ffe251;
+  color:rgb(33, 33, 33);
+}
+
+
+
+
+
+/* ====== DETAIL PROJECT DARK-MODE ====== */
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .projek-detail-container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .projek-title {
+  color: #f1f1f1;
+}
+
+.dark-mode .projek-deskripsi {
+  color: #cccccc;
+}
+
+.dark-mode .projek-fitur li {
+  color: #dddddd;
+}
+
+.dark-mode .carousel {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .carousel-dots .dot {
+  background-color: #666;
+}
+
+.dark-mode .carousel-dots .dot.active {
+  background-color: #fff;
+}
+
+.dark-mode #toggleFitur {
+  background-color: #ffbf00;
+  color: #fff;
+}
+
+.dark-mode #toggleFitur:hover {
+  background-color: #565656;
+}
+
+.dark-mode .back-btn {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+.dark-mode .back-btn:hover {
+  background-color: #555;
+}
+
+.dark-mode .lihat-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff200;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .lihat-link:hover {
+  color: #e1ae08;
+}

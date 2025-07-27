@@ -1,0 +1,146 @@
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  min-height: 400px;
+  align-items: center;
+}
+
+
+
+.soft-skill {
+  flex: 1;
+  min-width: 280px;
+}
+
+.soft-skill h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.soft-desc p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hard-skill {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.hard-skill h2 {
+  width: 100%;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.skill-percent {
+  font-size: 18px;
+  font-weight: bold;
+  color: #343434;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .skill-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .soft-skill, .hard-skill {
+    width: 100%;
+    text-align: center;
+     gap: 5px;
+  }
+
+  .skill-card {
+    width: 110px;
+    padding: 16px;
+   
+  }
+
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .skill-percent {
+    font-size: 16px;
+  }
+}
+
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}

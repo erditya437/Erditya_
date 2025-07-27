@@ -1,0 +1,244 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top navbar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.top-navbar.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.top-navbar .logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+}
+
+/* Overlay (for mobile menu) */
+.overlay {
+  display: none;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  transition: all 0.6s ease;
+  text-align: center;
+   margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 30px;
+    color:#333;
+  }
+
+.hero-text h1 {
+  font-size: 12rem;
+  transition: all 0.6s ease;
+  color:#333;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Shrink on scroll */
+.hero-text.shrink h1 {
+  font-size: 2rem;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  color: #039eff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bottom-navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .bottom-navbar nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-text h1 {
+    font-size: 7rem; /* bisa kamu sesuaikan misalnya 28px */
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    color:#333;
+  }
+}
+
+/* Tombol Pintasan Bulat */
+.floating-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* Overlay Menu */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001; /* Naikkan agar menutupi navbar */
+}
+
+
+.overlay-menu.active {
+  display: flex;
+}
+
+.overlay-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.overlay-content button,
+.overlay-content select {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lihat-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.lihat-link:hover {
+  color: #0056b3;
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Loader background */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* bisa diganti warna */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Spinner animasi */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #9c9c9c;
+  border-top: 6px solid #00ddff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Sembunyikan loader saat loaded */
+body.loaded #loader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animasi muter */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
